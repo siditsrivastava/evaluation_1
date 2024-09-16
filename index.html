@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Kinderganten</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .main-navbar-section {
+        width: auto;
+        height: 70px;
+        /* background-color: #25ccca; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        box-shadow: 2px 5px 2px 2px rgb(175, 175, 175);
+      }
+
+      .main-navbar-section h2 {
+        padding-top: 10px;
+        margin-left: 150px;
+        color: #338dbc;
+        font-weight: 800;
+      }
+
+      .logoPart_1 {
+        color: rgb(186, 4, 186);
+      }
+
+      .logoPart_2 {
+        color: yellow;
+      }
+
+      .logoPart_3 {
+        color: #25ccca;
+      }
+
+      .btn{
+        width: 80px;
+        height:30px;
+        border-radius: 32px;
+        color: white;
+        background-color:#10d8dd ;
+        margin-bottom: 1px;
+      }
+
+      .option ul {
+        display: flex;
+        padding-top: 15px;
+        list-style: none;
+        margin-right: 80px;
+        /* margin-left: 50px; */
+      }
+
+      .option ul li {
+        padding-left: 30px;
+      }
+
+      .option ul li a {
+        color: #4a428c;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      /* END  */
+
+      /* start main-section  */
+
+      .points {
+        width: 50px;
+        height: 50px;
+        background-color: #338dbc;
+        border-radius: 50%;
+      }
+      .points1 {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        border-radius: 50%;
+      }
+      .points2 {
+        width: 50px;
+        height: 50px;
+        background-color: #25ccca;
+        border-radius: 50%;
+      }
+
+      .second-section_part1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+      }
+      .image img {
+        width: 450px;
+        height: 400px;
+        margin-left: 80px;
+      }
+
+      .first-section {
+        width: auto;
+        height: auto;
+        /* background-color: aqua; */
+      }
+
+      .content {
+        margin-left: 20px;
+      }
+
+      .content p {
+        color: grey;
+        font-size: 13px;
+        margin-top: 10px;
+      }
+
+      .heading {
+        text-align: center;
+        color: #4a428c;
+        padding-top: 50px;
+      }
+
+      .heading span {
+        color: rgb(186, 4, 186);
+      }
+
+      .heading .paragraph {
+        margin-top: 15px;
+      }
+      .paragraph p {
+        padding-top: 10px;
+      }
+
+      .second-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 70px;
+        padding-bottom: 50px;
+        padding-top: 10px;
+      }
+
+      .offer-first-section {
+        width: auto;
+        height: auto;
+        background-color: #fff2f9;
+      }
+
+      .offer-note {
+        text-align: center;
+        padding-top: 50px;
+        color: #4a428c;
+      }
+
+      .offer-note h2 {
+        font-size: 40px;
+      }
+
+      .offer-note-tagline {
+        margin-top: 15px;
+      }
+
+      .offer-note-tagline p {
+        padding-top: 10px;
+      }
+
+      .card-borad-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .first {
+        margin-top: 60px;
+        width: auto;
+        height: 100%;
+        background-color: white;
+        border-radius: 29px;
+        margin-left: 40px;
+      }
+      .first img {
+        width: 300px;
+      }
+
+      .first h3 {
+        margin-top: 10px;
+        margin-left: 20px;
+        color: #4a428c;
+      }
+      .line {
+        margin-top: 5px;
+        margin-left: 20px;
+        color: grey;
+      }
+      .lines {
+        margin-top: 5px;
+        margin-left: 20px;
+        color: grey;
+        margin-bottom: 20px;
+      }
+
+      .rating {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .age h4 {
+        color: rgb(186, 4, 186);
+      }
+
+      .rating p {
+        font-size: 13px;
+      }
+
+      .classes h4 {
+        color: yellow;
+      }
+
+      .class_price h4 {
+        color: #338dbc;
+      }
+
+      .teacher-section {
+        width: auto;
+        height: auto;
+      }
+
+      .teacher-note {
+        text-align: center;
+        padding-top: 50px;
+        color: #4a428c;
+      }
+
+      .teacher-note h2 {
+        font-size: 40px;
+      }
+
+      .teacher-note-tagline {
+        margin-top: 15px;
+      }
+
+      .teacher-note-tagline p {
+        padding-top: 10px;
+      }
+
+      .teacher-info-section {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+      }
+
+      .teacher-info {
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin-left: 50px;
+      }
+
+      .teacher-info img {
+        width: 230px;
+      }
+
+      .teacher-info h4 {
+        padding-top: 10px;
+      }
+      .teacher-info p {
+        padding-top: 8px;
+        color: grey;
+        font-size: 13px;
+      }
+
+      .footer-cardborad {
+        width: auto;
+        height: auto;
+        background-color: #4155a2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .footer-paragraph {
+        padding-top: 25px;
+      }
+
+      .footer-paragraph p {
+        padding-top: 3px;
+      }
+
+      .quickslink {
+        margin-left: 150px;
+      }
+
+      .quickslink h2 {
+        font-weight: bolder;
+      }
+
+      .quickslink_option {
+        padding-top: 20px;
+      }
+
+      .quickslink_option p {
+        padding-top: 13px;
+      }
+
+      .social_media_account {
+        display: flex;
+        justify-content: start;
+        align-self: center;
+      }
+
+      .facebook {
+        width: 40px;
+        height: 30px;
+        background-color: #404d81;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 13px;
+        margin-top: 40px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="main-navbar-section">
+        <div>
+          <h2>
+            Kin<span class="logoPart_1">der</span
+            ><span class="logoPart_2">gar</span
+            ><span class="logoPart_3">ten</span>
+          </h2>
+        </div>
+        <div class="option">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Class</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li >
+              <button class = "btn"><a href="" >Enroll Now</a></button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main-section>
+      <div class="first-section">
+        <div class="heading">
+          <h1>Welcome to our <span>Kinderganten</span></h1>
+          <div class="paragraph">
+            <p>
+              Our set he for firmament sixth subdue today the darkness creeping
+              gatherding divide our let god moving
+            </p>
+            <p>
+              today. Moving in fourth air night bring upon lesser subdue fowl
+              male signs
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-section">
+        <div>
+          <div class="second-section_part1">
+            <div class="points"></div>
+            <div class="content">
+              <h3 style="color: #338dbc">Inter School Sports</h3>
+              <p>The Words you use in your written</p>
+              <p>communica speak volumes.</p>
+            </div>
+          </div>
+          <div class="second-section_part1">
+            <div class="points1"></div>
+            <div class="content">
+              <h3 style="color: yellow">Inter School Sports</h3>
+              <p>The Words you use in your written</p>
+              <p>communica speak volumes.</p>
+            </div>
+          </div>
+          <div class="second-section_part1">
+            <div class="points2"></div>
+            <div class="content" style="color: #25ccca">
+              <h3 style="color: #25ccca">Inter School Sports</h3>
+              <p>The Words you use in your written</p>
+              <p>communica speak volumes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./image/about2.png.webp" alt="student-study_image" />
+        </div>
+      </div>
+    </main-section>
+
+    <about-section>
+      <div class="offer-first-section">
+        <div class="offer-note">
+          <h2>Classes We Offer</h2>
+          <div class="offer-note-tagline">
+            <p>
+              Our set he for firmament sixth subdue today the darkness creeping
+              gatherding divide our let god moving
+            </p>
+            <p>today. Moving in fourth air night bring upon lesser subdue.</p>
+          </div>
+        </div>
+
+        <div class="card-borad-section">
+          <div class="first">
+            <img src="./image/class.webp" />
+            <h3>Intelligent Challenge</h3>
+            <p class="line">The words you use in your written</p>
+            <p class="lines">communica speak volumes.</p>
+            <hr />
+            <div class="rating">
+              <div class="age">
+                <h4>3-5</h4>
+                <p>Age group</p>
+              </div>
+              <div class="classes">
+                <h4>30</h4>
+                <p>Classes</p>
+              </div>
+              <div class="class_price">
+                <h4>10/h</h4>
+                <p>Class Price</p>
+              </div>
+            </div>
+          </div>
+          <div class="first">
+            <img src="./image/class.webp" />
+            <h3>Intelligent Challenge</h3>
+            <p class="line">The words you use in your written</p>
+            <p class="lines">communica speak volumes.</p>
+            <hr />
+            <div class="rating">
+              <div class="age">
+                <h4>3-5</h4>
+                <p>Age group</p>
+              </div>
+              <div class="classes">
+                <h4>30</h4>
+                <p>Classes</p>
+              </div>
+              <div class="class_price">
+                <h4>10/h</h4>
+                <p>Class Price</p>
+              </div>
+            </div>
+          </div>
+          <div class="first">
+            <img src="./image/class.webp" />
+            <h3>Intelligent Challenge</h3>
+            <p class="line">The words you use in your written</p>
+            <p class="lines">communica speak volumes.</p>
+            <hr />
+            <div class="rating">
+              <div class="age">
+                <h4>3-5</h4>
+                <p>Age group</p>
+              </div>
+              <div class="classes">
+                <h4>30</h4>
+                <p>Classes</p>
+              </div>
+              <div class="class_price">
+                <h4>10/h</h4>
+                <p>Class Price</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+      </div>
+    </about-section>
+
+    <teacher-section>
+      <div class="teacher-section">
+        <div class="teacher-note">
+          <h2>Expert Teachers</h2>
+          <div class="teacher-note-tagline">
+            <p>
+              Our set he for firmament sixth subdue today the darkness creeping
+              gatherding divide our let god moving
+            </p>
+            <p>today. Moving in fourth air night bring upon lesser subdue.</p>
+          </div>
+        </div>
+
+        <div class="teacher-info-section">
+          <div class="teacher-info">
+            <img src="./image/first_teacher.webp" alt="teacher_image" />
+            <h4>Mr. Jacson Clay</h4>
+            <p>Sports instructor</p>
+          </div>
+          <div class="teacher-info">
+            <img src="./image/second_teacher.webp" alt="teacher_image" />
+            <h4>Mr. Jacson Clay</h4>
+            <p>Sports instructor</p>
+          </div>
+          <div class="teacher-info">
+            <img src="./image/third_teacher.webp" alt="teacher_image" />
+            <h4>Mr. Jacson Clay</h4>
+            <p>Sports instructor</p>
+          </div>
+          <div class="teacher-info">
+            <img src="./image/first_teacher.webp" alt="teacher_image" />
+            <h4>Mr. Buster Hyman</h4>
+            <p>Sports instructor</p>
+          </div>
+        </div>
+      </div>
+    </teacher-section>
+
+    <footer>
+      <div class="footer-section">
+        <div class="footer-cardborad">
+          <div class="footer-info">
+            <h2 style="color: #338dbc">
+              Kin<span class="logoPart_1">der</span
+              ><span class="logoPart_2">gar</span
+              ><span class="logoPart_3">ten</span>
+            </h2>
+            <div class="footer-paragraph">
+              <p>Users and submit thier own items. You can create</p>
+              <p>different package and by connecting with your PayPal</p>
+              <p>or Stripe account charge users for registation</p>
+            </div>
+
+            <div class="social_media_account">
+              <div class="facebook">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="facebook">
+                <h4>P</h4>
+              </div>
+              <div class="facebook">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="quickslink">
+            <h2>Ouicks Links</h2>
+            <div class="quickslink_option">
+              <p>Classes</p>
+              <p>joins with us</p>
+              <p>About</p>
+              <p>Blog</p>
+              <p>Events</p>
+            </div>
+          </div>
+          <div class="quickslink">
+            <h2>About Us</h2>
+            <div class="quickslink_option">
+              <p>Our Team</p>
+              <p>Privacy Policy</p>
+              <p>Testimonial</p>
+              <p>Programming</p>
+              <p>user Stories</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
